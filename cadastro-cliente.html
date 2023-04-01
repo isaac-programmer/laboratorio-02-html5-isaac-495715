@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Cliente</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Cadastro - Cliente</h1>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+    <br />
+    <main>
+      <section>
+        <h3>Conclusão do Cadastro</h3>
+        <progress value="50" max="100"> 50% </progress>
+      </section>
+      <section>
+        <h3>Formulário</h3>
+        <form method="post">
+          <label>Data de Nascimento:</label>
+          <input type="date" name="data_nascimento" />
+
+          <label>Nome:</label>
+          <input type="text" name="nome" />
+
+          <label>Telefone:</label>
+          <input type="tel" name="telefone" />
+
+          <label>Mês de Adesão:</label>
+          <input type="text" name="mes_adesao" />
+
+          <label>Quantos filmes você pretende assistir?:</label>
+          <input type="checkbox" name="qtd_filmes" value="1" />1
+          <input type="checkbox" name="qtd_filmes" value="2" />2
+          <input type="checkbox" name="qtd_filmes" value="3" />3
+          <input type="checkbox" name="qtd_filmes" value="4" />4
+          <input type="checkbox" name="qtd_filmes" value="5" />5
+          <input type="checkbox" name="qtd_filmes" value="6" />6
+          <input type="checkbox" name="qtd_filmes" value="7" />7
+
+          <label>Escolha sua cor favorita:</label>
+          <input type="color" name="cor_preferida" />
+
+          <label>URL da sua página pessoal:</label>
+          <input
+            type="url"
+            name="url_pagina_pessoal"
+            placeholder="Ex.: http://exemplo.com"
+          />
+
+          <label>Data/Hora para usar o seu cupom na compra:</label>
+          <input type="datetime-local" name="data_hora_cupom" />
+
+          <label>Gênero de Preferência:</label>
+          <input
+            type="range"
+            name="genero_preferencia"
+            list="generos"
+          />
+          <datalist id="generos">
+            <option value="0" label="Ação"></option>
+            <option value="20" label="Drama"></option>
+            <option value="40" label="Romance"></option>
+            <option value="60" label="Comédia"></option>
+            <option value="80" label="Suspense"></option>
+            <option value="90" label="Terror"></option>
+            <option value="100" label="Ficção Científica"></option>
+          </datalist>
+
+          <input type="submit" value="Cadastrar">
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
